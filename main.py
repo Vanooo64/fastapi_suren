@@ -20,13 +20,13 @@ def hello(name: str= "World"):
     name = name.strip().title()
     return {"message": f"Hello {name}",}
 
-
 @app.post("/users/")
 def create_user(user: CreateUser):
     return {
         "massege": "succes",
         "email": user.email,
     }
+
 
 @app.post("/calc/add/")
 def add_calc(a: int, b:int):
