@@ -8,7 +8,6 @@ app = FastAPI()
 class CreateUser(BaseModel):
     email: EmailStr
 
-
 @app.get("/")
 def hello_index():
     return {
